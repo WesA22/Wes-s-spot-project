@@ -58,6 +58,11 @@
   text-align: left;
 }
 
+.profile__edit-btn:hover {
+  opacity: 0.8;
+  cursor: url("../images/pointer.svg"), pointer; /* Ensures custom cursor */
+}
+
 .pencil__image {
   width: 12px;
   height: 12px;
@@ -80,6 +85,10 @@
   line-height: 1;
 }
 
+.profile__add-btn:hover {
+  opacity: 0.8;
+  cursor: url("../images/pointer.svg"), pointer;
+}
 .plus__icon {
   width: 12px;
   height: 12px;
