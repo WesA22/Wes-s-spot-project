@@ -11,21 +11,17 @@
   grid-template-columns: repeat(3, 413px);
   justify-content: center;
   gap: 40px 20px;
+  width: 100%;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1280px) {
   .cards__list {
     grid-template-columns: 1fr;
     gap: 20px 20px;
   }
 }
 
-@media (max-width: 1286px) {
-  .cards__list {
-  }
-}
-
-@media screen and (max-width: 627px) {
+@media screen and (max-width: 1280px) {
   .cards__list {
     grid-template-columns: repeat(auto-fit, 288px);
   }
