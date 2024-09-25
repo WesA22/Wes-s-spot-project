@@ -6,7 +6,7 @@
 
 .profile__avatar {
   margin-right: 20px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 8px 8px 8px 8px;
   height: 190px;
   width: 190px;
 }
@@ -30,6 +30,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   min-width: 420px;
+  color: #212121;
 }
 
 .profile__description {
@@ -45,17 +46,19 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   min-width: 420px;
+  color: #212121;
 }
 
 .profile__edit-btn {
   margin-top: auto;
-  background-color: #fcf5e5;
+  background-color: transparent;
   border-style: none;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
   text-align: left;
+  color: #212121;
 }
 
 .profile__edit-btn:hover {
@@ -78,11 +81,12 @@
   flex-direction: column;
   margin-top: auto;
   margin-left: auto;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 2px 2px 2px 2px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
+  border-bottom: none;
 }
 
 .profile__add-btn:hover {
@@ -101,11 +105,18 @@
     max-width: 288px;
     align-items: center;
     padding-top: 20px;
+    width: 288px;
   }
 
   .profile__description {
     text-align: center;
     margin: 0 0 32px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: inline-block;
   }
 
   .profile__avatar {
@@ -120,6 +131,12 @@
     font-size: 20px;
     margin: 0 0 6px;
     min-width: 288px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: inline-block;
   }
 
   .profile__column {
@@ -134,10 +151,5 @@
   .profile__edit-btn {
     padding: 0;
     text-align: center;
-  }
-
-  .card__like-button {
-    height: 18px;
-    width: 20px;
   }
 }
