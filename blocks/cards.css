@@ -1,6 +1,7 @@
 .cards {
   padding-top: 20px;
   border-bottom: 1px rgb(33, 33, 33, 0.4) solid;
+  border-width: 100%;
 }
 
 .cards__list {
@@ -10,19 +11,19 @@
   display: grid;
   grid-template-columns: repeat(3, 413px);
   justify-content: center;
-  gap: 40px 20px;
+  column-gap: 20px;
   width: 100%;
-}
-
-@media (max-width: 1280px) {
-  .cards__list {
-    grid-template-columns: 1fr;
-    gap: 20px 20px;
-  }
 }
 
 @media screen and (max-width: 1280px) {
   .cards__list {
+    gap: 20px 20px;
     grid-template-columns: repeat(auto-fit, 288px);
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .cards__list {
+    row-gap: 0;
   }
 }
