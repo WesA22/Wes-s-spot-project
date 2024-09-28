@@ -1,6 +1,8 @@
 .cards {
   padding-top: 20px;
   border-bottom: 1px rgb(33, 33, 33, 0.4) solid;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .cards__list {
@@ -8,21 +10,21 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, 413px);
+  grid-template-columns: repeat(auto-fit, 413px);
   justify-content: center;
   column-gap: 20px;
-  width: 100%;
 }
 
 @media screen and (max-width: 1280px) {
   .cards__list {
     gap: 20px 20px;
-    grid-template-columns: repeat(auto-fit, 288px);
+    grid-template-columns: repeat(auto-fit, 413px);
   }
 }
 
 @media screen and (max-width: 627px) {
   .cards__list {
     row-gap: 0;
+    grid-template-columns: repeat(auto-fit, 288px);
   }
 }

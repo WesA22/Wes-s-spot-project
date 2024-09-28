@@ -51,12 +51,16 @@
 
 @media screen and (max-width: 1280px) {
   .card__image {
-    width: 288px;
-    height: 288px;
+    width: 413px;
+    height: 413px;
   }
 }
 
 @media screen and (max-width: 627px) {
+  .card {
+    max-width: 288px;
+  }
+
   .card__title {
     font-size: 16px;
     line-height: 1;
@@ -64,6 +68,7 @@
 
   .card__image {
     height: 288px;
+    max-width: 288px;
   }
 
   .card__like-button {
@@ -72,5 +77,6 @@
   }
   .card__content {
     padding: 14px 0 20px;
+    max-width: 288px;
   }
 }
