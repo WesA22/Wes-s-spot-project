@@ -16,5 +16,10 @@ This project has a desktop and mobile app screen size variant that each fit on t
 
 This webpage is deployed to GitHub Pages:
 
-https://github.com/WesA22/Wes-spot-project
+https://wesa22.github.io/se_project_spots/
 
+## Video 
+
+This is a video of me explaining my project and how I completed it. 
+
+https://drive.google.com/file/d/1jHL5SumHhbUChTX1H2qiG5gKxYy-suP_/view?usp=sharing
