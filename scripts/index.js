@@ -62,12 +62,10 @@ function getCardElement(data) {
   const cardNameEl = cardElement.querySelector(".card__title");
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardLikeBtn = cardElement.querySelector(".card__like-button");
+  const cardDeleteBtn = cardElement.querySelector(".card__delete-button");
 
-  document.querySelectorAll(".card__delete-button").forEach((button) => {
-    button.addEventListener("click", function () {
-      const card = this.closest(".card");
-      card.remove();
-    });
+  cardDeleteBtn.addEventListener("click", () => {
+    cardElement.remove();
   });
 
   cardNameEl.textContent = data.name;
@@ -81,22 +79,23 @@ function getCardElement(data) {
   cardImageEl.addEventListener("click", () => {
     openModal(previewModal);
     previewModalImageEl.src = data.link;
+    previewModalImageEl.alt = data.name;
     previewModalCaptionEl.textContent = data.name;
-  });
-
-  previewModalCloseButton.addEventListener("click", () => {
-    closeModal(previewModal);
   });
 
   return cardElement;
 }
 
+previewModalCloseButton.addEventListener("click", () => {
+  closeModal(previewModal);
+});
+
 function openModal(modal) {
-  modal.classList.add("modal__is-opened");
+  modal.classList.add("modal_is-opened");
 }
 
 function closeModal(modal) {
-  modal.classList.remove("modal__is-opened");
+  modal.classList.remove("modal_is-opened");
 }
 
 function handleEditFormSubmit(evt) {
@@ -111,7 +110,9 @@ function handleAddCardSubmit(evt) {
   const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
   const cardElement = getCardElement(inputValues);
   cardList.prepend(cardElement);
+
   closeModal(cardModal);
+  evt.target.reset();
 }
 
 profileEditButton.addEventListener("click", () => {
