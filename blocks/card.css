@@ -36,15 +36,18 @@
   background-size: cover;
   border: none;
   opacity: 40%;
+  margin-right: 8px;
+  padding: 0;
 }
 .card__like-button:hover {
   opacity: 1;
-  cursor: url("../images/pointer.svg"), pointer;
+  cursor: pointer;
 }
 
 .card__like-button_liked {
   background-image: url(../images/liked.svg);
   opacity: 1;
+  background-color: transparent;
 }
 
 .card__like-button_liked:hover {
