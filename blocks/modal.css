@@ -68,6 +68,10 @@
   background-image: url(../images/Property\ 1=Variant2.svg);
 }
 
+.modal__close-btn_disabled {
+  opacity: 0.5;
+}
+
 .modal__title {
   margin: 0 0 32px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -120,10 +124,6 @@
   border-radius: 8px 8px 8px 8px;
   border-color: black;
   background-color: black;
-}
-
-.modal__submit-btn-disabled {
-  opacity: 0.5;
 }
 
 .modal__caption {
