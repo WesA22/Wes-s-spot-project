@@ -45,7 +45,8 @@
 }
 
 .card__like-button_liked {
-  background-image: url(../images/redheart.svg);
+  background-image: url(../images/Union.svg);
+  background-color: transparent;
   opacity: 1;
 }
 
