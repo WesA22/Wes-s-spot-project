@@ -142,6 +142,7 @@ profileEditButton.addEventListener("click", () => {
     config
   );
   openModal(editModal);
+  resetValidation();
 });
 editModalCloseButton.addEventListener("click", () => {
   closeModal(editModal);

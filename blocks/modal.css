@@ -55,6 +55,7 @@
   background-color: transparent;
   border-style: none;
   position: absolute;
+  cursor: pointer;
 }
 
 .modal__close-btn_type_preview {
@@ -124,9 +125,10 @@
   border-radius: 8px 8px 8px 8px;
   border-color: black;
   background-color: black;
-}
-.modal__submit-btn {
   cursor: pointer;
+}
+.modal__submit-btn_disabled {
+  opacity: 0.5;
 }
 
 .modal__caption {
@@ -159,7 +161,7 @@
 
   .modal__close-btn {
     top: 12px;
-    right: 12px;
+    right: 0px;
   }
 
   .modal__label {
