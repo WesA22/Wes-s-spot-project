@@ -138,19 +138,16 @@ profileEditButton.addEventListener("click", () => {
   editModalDescriptionInput.value = profileDescription.textContent;
   resetValidation(
     editFormElement,
-    [cardNameInput, editModalDescriptionInput],
+    [editModalNameInput, editModalDescriptionInput],
     config
   );
   openModal(editModal);
-  resetValidation();
 });
 editModalCloseButton.addEventListener("click", () => {
   closeModal(editModal);
 });
 
 profileCardButton.addEventListener("click", () => {
-  editModalNameInput.value = "";
-  editModalDescriptionInput.value = profileDescription.textContent;
   openModal(cardModal);
 });
 cardModalCloseButton.addEventListener("click", () => {
